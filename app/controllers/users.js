@@ -12,8 +12,10 @@ module.exports = function (app) {
     },
     create: (req, res) => {
       req.body.senha = bcrypt.hashSync(req.body.senha, 10);
+      console.log(req.body);
       repo.insert(req.body)
         .then((result) => {
+          console.log(result);
           return res.json(result);
         })
         .catch((err) => {

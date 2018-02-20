@@ -15,6 +15,7 @@ module.exports = function(model) {
       });
     },
     insert: function(data) {
+      console.log(data);
       return new Promise((resolve, reject) => {
         model.create(data, (err, result) => {
           return promiseResolve(resolve, reject, err, result)
