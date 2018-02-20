@@ -1,0 +1,23 @@
+{
+  "name": "Apponte",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "~1.17.1",
+    "consign": "^0.1.6",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-load": "^1.1.16",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.6",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  }
+}
