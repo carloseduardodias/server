@@ -40,20 +40,6 @@ app.use(function(req, res, next) {
    next(err);
 });
 
-// app.use(function(req, res, next)
-// {
-//    /* Allow access from any requesting client */
-//    res.setHeader('Access-Control-Allow-Origin', '*');
-
-//    /* Allow access for any of the following Http request types */
-//    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');
-
-//    /* Set the Http request header */
-//    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,Authorization');
-//     next();
-// });
-
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

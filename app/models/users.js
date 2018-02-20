@@ -8,6 +8,7 @@ module.exports = function (app) {
     cpf: {type: String, required: true, unique: true},
     email: {type: String, required: true, unique: true},
     senha: {type: String, required: true},
+    senha_confirm: {type: String, required: true},
   });
 
   return db.model('users', user_schema);
